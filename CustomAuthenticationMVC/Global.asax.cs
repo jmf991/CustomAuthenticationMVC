@@ -1,4 +1,5 @@
 using CustomAuthenticationMVC.CustomAuthentication;
+using CustomAuthenticationMVC.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
