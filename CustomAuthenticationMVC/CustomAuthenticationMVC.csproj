@@ -103,6 +103,9 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="CustomAuthentication\CustomAuthorizeAttribute.cs" />
     <Compile Include="CustomAuthentication\CustomMembership.cs" />
     <Compile Include="CustomAuthentication\CustomMemberShipUser.cs" />
     <Compile Include="CustomAuthentication\CustomPrincipal.cs" />
@@ -123,6 +126,10 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Registration.cshtml" />
+    <Content Include="Views\Account\ActivationAccount.cshtml" />
+    <Content Include="Views\Error\AccessDenied.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -133,7 +140,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Account\" />
+    <Folder Include="Views\AccessDenied\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201907191231180_initial_migration.resx">
